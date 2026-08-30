@@ -1,0 +1,1608 @@
+/* ==========================================
+   GOOGLE FONTS
+   ========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap');
+
+
+/* ==========================================
+   GLOBAL RESET
+   ========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(
+        135deg,
+        #050816,
+        #081b42,
+        #142850
+    );
+    color: #ffffff;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+
+/* ==========================================
+   BACKGROUND
+   ========================================== */
+
+.stars {
+    position: fixed;
+    inset: 0;
+
+    background-image:
+        url("https://www.transparenttextures.com/patterns/stardust.png");
+
+    opacity: 0.25;
+
+    animation: moveStars 80s linear infinite;
+
+    z-index: -2;
+}
+
+
+@keyframes moveStars {
+
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-1000px);
+    }
+
+}
+
+
+/* ==========================================
+   PARTICLES
+   ========================================== */
+
+.particles {
+    position: fixed;
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+
+/* ==========================================
+   LOADER
+   ========================================== */
+
+#loader {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: #050816;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    z-index: 9999;
+
+    transition: opacity 0.5s ease;
+
+}
+
+
+.loader-box {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+
+.gift-loader {
+
+    font-size: 80px;
+
+    animation: giftBounce 1s infinite;
+
+}
+
+
+@keyframes giftBounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+}
+
+
+.loader-box h2 {
+
+    margin: 20px;
+
+    font-size: 22px;
+
+}
+
+
+.progress {
+
+    width: 250px;
+
+    height: 8px;
+
+    background: #333;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+}
+
+
+.progress-bar {
+
+    width: 0;
+
+    height: 100%;
+
+    background: gold;
+
+    animation: load 3s forwards;
+
+}
+
+
+@keyframes load {
+
+    to {
+        width: 100%;
+    }
+
+}
+
+
+/* ==========================================
+   SECTIONS
+   ========================================== */
+
+section {
+
+    padding: 80px 8%;
+
+    text-align: center;
+
+    opacity: 0;
+
+    transform: translateY(60px);
+
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+
+}
+
+
+section.visible {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+/* ==========================================
+   OPENING SECTION
+   ========================================== */
+
+#opening {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    opacity: 1;
+
+    transform: none;
+
+    transition: opacity 0.5s ease;
+
+}
+
+
+#opening h1 {
+
+    margin-top: 30px;
+
+    font-family: 'Great Vibes', cursive;
+
+    font-size: 65px;
+
+    color: gold;
+
+}
+
+
+#opening h2 {
+
+    margin-top: 10px;
+
+    font-weight: 400;
+
+}
+
+
+/* ==========================================
+   GIFT
+   ========================================== */
+
+.gift {
+
+    width: 180px;
+
+    margin: auto;
+
+}
+
+
+.gift-top {
+
+    height: 35px;
+
+    background: gold;
+
+    border-radius: 15px;
+
+}
+
+
+.gift-body {
+
+    height: 180px;
+
+    background:
+        linear-gradient(
+            45deg,
+            #00bfff,
+            #0066ff
+        );
+
+    border-radius: 15px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 70px;
+
+    box-shadow: 0 0 25px cyan;
+
+    transition: 0.5s;
+
+}
+
+
+.gift-body:hover {
+
+    transform:
+        rotateY(20deg)
+        scale(1.05);
+
+}
+
+
+/* ==========================================
+   BUTTONS
+   ========================================== */
+
+button {
+
+    padding: 15px 35px;
+
+    border: none;
+
+    border-radius: 40px;
+
+    margin-top: 30px;
+
+    background:
+        linear-gradient(
+            45deg,
+            #00bfff,
+            #0066ff
+        );
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.4s;
+
+}
+
+
+button:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 0 20px cyan;
+
+}
+
+
+button:active {
+
+    transform: scale(0.96);
+
+}
+
+
+/* ==========================================
+   HERO
+   ========================================== */
+
+#hero {
+
+    min-height: 100vh;
+
+    display: none;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+#hero.show {
+
+    animation: heroReveal 1s ease forwards;
+
+}
+
+
+@keyframes heroReveal {
+
+    from {
+
+        opacity: 0;
+
+        transform: scale(0.95);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+#hero img {
+
+    width: 250px;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 8px solid white;
+
+    box-shadow: 0 0 30px cyan;
+
+    animation: float 4s infinite ease-in-out;
+
+}
+
+
+@keyframes float {
+
+    50% {
+
+        transform: translateY(-15px);
+
+    }
+
+}
+
+
+#hero h1 {
+
+    font-family: 'Great Vibes', cursive;
+
+    font-size: 70px;
+
+    color: gold;
+
+    margin: 20px 0;
+
+}
+
+
+#typing {
+
+    color: #66d9ff;
+
+    font-size: 30px;
+
+    min-height: 45px;
+
+}
+
+
+#hero p {
+
+    max-width: 850px;
+
+    margin: 20px auto 0;
+
+    line-height: 1.8;
+
+}
+
+
+/* ==========================================
+   GLASS SECTIONS
+   ========================================== */
+
+.glass {
+
+    width: 90%;
+
+    margin: 60px auto;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    backdrop-filter: blur(12px);
+
+    background: rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 0 20px
+        rgba(0, 191, 255, 0.4);
+
+}
+
+
+.glass h2 {
+
+    color: gold;
+
+    margin-bottom: 20px;
+
+    font-size: 40px;
+
+}
+
+
+.glass p {
+
+    line-height: 1.9;
+
+}
+
+
+/* ==========================================
+   GALLERY
+   ========================================== */
+
+#gallery h2,
+#timeline h2,
+#cakeSection h2 {
+
+    font-size: 45px;
+
+    color: gold;
+
+    margin-bottom: 30px;
+
+}
+
+
+.gallery-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(220px, 1fr)
+        );
+
+    gap: 25px;
+
+    margin-top: 40px;
+
+}
+
+
+.card {
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    transition: 0.5s;
+
+    box-shadow:
+        0 0 20px
+        rgba(0, 0, 0, 0.5);
+
+}
+
+
+.card img {
+
+    width: 100%;
+
+    display: block;
+
+    transition: 0.6s;
+
+}
+
+
+.card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+
+.card:hover img {
+
+    transform: scale(1.1);
+
+}
+
+
+/* ==================================================
+   INTERACTIVE GALLERY
+   ================================================== */
+
+.gallery-intro {
+
+    max-width: 650px;
+
+    margin: -10px auto 25px;
+
+    color: rgba(255, 255, 255, 0.75);
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+}
+
+
+/* Make gallery images clickable */
+
+.gallery-item {
+
+    cursor: pointer;
+
+    position: relative;
+
+}
+
+
+.gallery-item::after {
+
+    content: "🔍";
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 15px;
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    backdrop-filter: blur(5px);
+
+    border-radius: 50%;
+
+    opacity: 0;
+
+    transform: scale(0.7);
+
+    transition: 0.3s ease;
+
+    pointer-events: none;
+
+}
+
+
+.gallery-item:hover::after {
+
+    opacity: 1;
+
+    transform: scale(1);
+
+}
+
+
+/* ==================================================
+   LIGHTBOX
+   ================================================== */
+
+.image-lightbox {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.94);
+
+    backdrop-filter: blur(12px);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 40px 80px;
+
+    z-index: 10000;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.35s ease,
+        visibility 0.35s ease;
+
+}
+
+
+.image-lightbox.active {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+}
+
+
+/* ==================================================
+   LIGHTBOX CONTENT
+   ================================================== */
+
+.lightbox-content {
+
+    max-width: 90vw;
+
+    max-height: 90vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+}
+
+
+#lightboxImage {
+
+    max-width: 85vw;
+
+    max-height: 78vh;
+
+    object-fit: contain;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 0 40px rgba(0, 191, 255, 0.45);
+
+    transform: scale(0.85);
+
+    opacity: 0;
+
+    transition:
+        transform 0.35s ease,
+        opacity 0.35s ease;
+
+}
+
+
+.image-lightbox.active #lightboxImage {
+
+    transform: scale(1);
+
+    opacity: 1;
+
+}
+
+
+/* ==================================================
+   CAPTION
+   ================================================== */
+
+#lightboxCaption {
+
+    margin-top: 15px;
+
+    color: white;
+
+    font-size: 18px;
+
+    text-align: center;
+
+}
+
+
+#lightboxCounter {
+
+    margin-top: 5px;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 14px;
+
+}
+
+
+/* ==================================================
+   CLOSE BUTTON
+   ================================================== */
+
+.lightbox-close {
+
+    position: absolute;
+
+    top: 25px;
+
+    right: 30px;
+
+    width: 55px;
+
+    height: 55px;
+
+    padding: 0;
+
+    margin: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    color: white;
+
+    font-size: 25px;
+
+    z-index: 10002;
+
+    transition: 0.3s ease;
+
+}
+
+
+.lightbox-close:hover {
+
+    background: rgba(255, 255, 255, 0.25);
+
+    transform: rotate(90deg);
+
+    box-shadow:
+        0 0 20px rgba(0, 191, 255, 0.6);
+
+}
+
+
+/* ==================================================
+   NAVIGATION BUTTONS
+   ================================================== */
+
+.lightbox-nav {
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 60px;
+
+    height: 60px;
+
+    padding: 0;
+
+    margin: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    color: white;
+
+    font-size: 22px;
+
+    z-index: 10002;
+
+}
+
+
+.lightbox-nav:hover {
+
+    background: rgba(0, 191, 255, 0.35);
+
+    box-shadow:
+        0 0 20px cyan;
+
+}
+
+
+.lightbox-prev {
+
+    left: 25px;
+
+}
+
+
+.lightbox-next {
+
+    right: 25px;
+
+}
+
+
+/* ==================================================
+   PREVENT BODY SCROLL
+   ================================================== */
+
+body.lightbox-open {
+
+    overflow: hidden;
+
+}
+
+
+/* ==================================================
+   MOBILE LIGHTBOX
+   ================================================== */
+
+@media (max-width: 768px) {
+
+    .image-lightbox {
+
+        padding: 20px;
+
+    }
+
+
+    #lightboxImage {
+
+        max-width: 92vw;
+
+        max-height: 70vh;
+
+        border-radius: 10px;
+
+    }
+
+
+    .lightbox-close {
+
+        top: 15px;
+
+        right: 15px;
+
+        width: 48px;
+
+        height: 48px;
+
+        font-size: 20px;
+
+    }
+
+
+    .lightbox-nav {
+
+        width: 48px;
+
+        height: 48px;
+
+        font-size: 18px;
+
+    }
+
+
+    .lightbox-prev {
+
+        left: 10px;
+
+    }
+
+
+    .lightbox-next {
+
+        right: 10px;
+
+    }
+
+
+    #lightboxCaption {
+
+        font-size: 15px;
+
+        max-width: 85vw;
+
+    }
+
+
+    .gallery-item::after {
+
+        opacity: 1;
+
+        transform: scale(0.85);
+
+        width: 36px;
+
+        height: 36px;
+
+        font-size: 14px;
+
+    }
+
+}
+
+
+
+
+/* ==========================================
+   TIMELINE
+   ========================================== */
+
+.timeline-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(220px, 1fr)
+        );
+
+    gap: 25px;
+
+    margin-top: 40px;
+
+}
+
+
+.timeline-item {
+
+    position: relative;
+
+}
+
+
+.timeline-item::before {
+
+    content: "✨";
+
+    display: block;
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* ==========================================
+   CAKE
+   ========================================== */
+
+#cakeSection {
+
+    position: relative;
+
+}
+
+
+.cake-image {
+
+    width: 320px;
+
+    max-width: 90%;
+
+    margin: 30px auto;
+
+    display: block;
+
+    border-radius: 20px;
+
+    box-shadow: 0 0 30px gold;
+
+    transition: 0.5s;
+
+}
+
+
+.cake-image:hover {
+
+    transform: scale(1.05);
+
+    box-shadow: 0 0 40px cyan;
+
+}
+
+
+/* ==========================================
+   CANDLE
+   ========================================== */
+
+.candle-container {
+
+    position: relative;
+
+    width: 320px;
+
+    margin: -145px auto 100px;
+
+    height: 50px;
+
+    pointer-events: none;
+
+}
+
+
+.candle {
+
+    width: 12px;
+
+    height: 60px;
+
+    background: white;
+
+    margin: auto;
+
+    position: relative;
+
+    border-radius: 4px;
+
+    box-shadow:
+        inset 2px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+
+.flame {
+
+    width: 20px;
+
+    height: 28px;
+
+    background: orange;
+
+    border-radius:
+        50% 50% 50% 50%;
+
+    position: absolute;
+
+    top: -25px;
+
+    left: -4px;
+
+    animation: flicker 0.5s infinite alternate;
+
+    box-shadow:
+        0 0 15px orange,
+        0 0 30px gold;
+
+}
+
+
+@keyframes flicker {
+
+    from {
+
+        transform:
+            scale(1)
+            rotate(-3deg);
+
+    }
+
+    to {
+
+        transform:
+            scale(1.25)
+            rotate(3deg);
+
+    }
+
+}
+
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+footer {
+
+    background: #02040c;
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    margin-top: 50px;
+
+}
+
+
+footer h2 {
+
+    color: gold;
+
+    margin-bottom: 10px;
+
+}
+
+
+footer h3 {
+
+    margin-top: 15px;
+
+}
+
+
+/* ==========================================
+   FLOATING BUTTONS
+   ========================================== */
+
+#musicBtn,
+#topBtn {
+
+    position: fixed;
+
+    right: 20px;
+
+    width: 55px;
+
+    height: 55px;
+
+    padding: 0;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background: #00bfff;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 22px;
+
+    z-index: 5000;
+
+}
+
+
+#musicBtn {
+
+    bottom: 90px;
+
+}
+
+
+#topBtn {
+
+    bottom: 20px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(20px);
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+
+#topBtn.show {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+
+}
+
+
+/* ==========================================
+   BALLOONS
+   ========================================== */
+
+.floating-balloon {
+
+    position: fixed;
+
+    bottom: -80px;
+
+    z-index: 999;
+
+    pointer-events: none;
+
+    animation:
+        balloonRise
+        9s linear forwards;
+
+}
+
+
+@keyframes balloonRise {
+
+    from {
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+    }
+
+    to {
+
+        transform:
+            translateY(-120vh)
+            rotate(15deg);
+
+    }
+
+}
+
+
+/* ==========================================
+   CONFETTI
+   ========================================== */
+
+#confetti {
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 9998;
+
+}
+
+
+.confetti-piece {
+
+    position: fixed;
+
+    top: -40px;
+
+    animation:
+        confettiFall
+        5s linear forwards;
+
+}
+
+
+@keyframes confettiFall {
+
+    from {
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+    }
+
+    to {
+
+        transform:
+            translateY(120vh)
+            rotate(720deg);
+
+    }
+
+}
+
+
+/* ==========================================
+   FIREWORKS
+   ========================================== */
+
+#fireworks {
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    pointer-events: none;
+
+    z-index: 9997;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE DESIGN
+   ========================================== */
+
+@media (max-width: 768px) {
+
+    #opening h1 {
+
+        font-size: 48px;
+
+    }
+
+
+    #opening h2 {
+
+        font-size: 20px;
+
+    }
+
+
+    #hero h1 {
+
+        font-size: 48px;
+
+    }
+
+
+    #hero img {
+
+        width: 180px;
+
+        height: 180px;
+
+    }
+
+
+    #typing {
+
+        font-size: 21px;
+
+    }
+
+
+    #hero p {
+
+        font-size: 15px;
+
+    }
+
+
+    section {
+
+        padding: 60px 20px;
+
+    }
+
+
+    .glass {
+
+        width: 92%;
+
+        padding: 25px;
+
+    }
+
+
+    .glass h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    #gallery h2,
+    #timeline h2,
+    #cakeSection h2 {
+
+        font-size: 36px;
+
+    }
+
+
+    .cake-image {
+
+        width: 280px;
+
+    }
+
+
+    .candle-container {
+
+        margin-top: -125px;
+
+        margin-bottom: 80px;
+
+    }
+
+
+    button {
+
+        max-width: 100%;
+
+    }
+
+
+    #musicBtn,
+    #topBtn {
+
+        width: 50px;
+
+        height: 50px;
+
+        right: 15px;
+
+    }
+
+}
+
+
+/* ==========================================
+   SMALL PHONES
+   ========================================== */
+
+@media (max-width: 480px) {
+
+    #opening h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    #opening h2 {
+
+        font-size: 18px;
+
+    }
+
+
+    .gift {
+
+        width: 150px;
+
+    }
+
+
+    .gift-body {
+
+        height: 150px;
+
+        font-size: 55px;
+
+    }
+
+
+    #hero h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    #typing {
+
+        font-size: 18px;
+
+    }
+
+
+    .glass p {
+
+        font-size: 14px;
+
+    }
+
+
+    .gallery-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    #gallery h2,
+    #timeline h2,
+    #cakeSection h2 {
+
+        font-size: 32px;
+
+    }
+
+}
+
