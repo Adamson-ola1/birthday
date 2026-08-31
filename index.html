@@ -1,726 +1,634 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="description"
-        content="A special birthday surprise for Debukola.">
+    <meta
+        name="description"
+        content="A beautiful birthday surprise created especially for Debukola."
+    >
 
-    <title>🎉 Happy Birthday Debukola 🎉</title>
+    <meta
+        name="theme-color"
+        content="#0d0718"
+    >
 
-    <link rel="icon" href="data:image/svg+xml,
-    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-    <text y='.9em' font-size='90'>🎂</text>
-    </svg>">
+    <title>Happy Birthday Debukola 🎂❤️</title>
+
+    <!-- Favicon -->
+    <link
+        rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>"
+    >
+
+    <!-- Google Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap"
-        rel="stylesheet">
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
     <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
 
-    <link rel="stylesheet"
-        href="style.css">
+    <!-- Main stylesheet -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 </head>
-
 
 <body>
 
+    <!-- =====================================================
+         BACKGROUND EFFECTS
+         ===================================================== -->
 
-    <!-- ==================================================
-         LOADING SCREEN
-         ================================================== -->
+    <div class="stars" aria-hidden="true"></div>
+    <div class="particles" aria-hidden="true"></div>
 
-    <div id="loader">
+    <!-- =====================================================
+         LOADER
+         ===================================================== -->
 
+    <div
+        id="loader"
+        class="loader"
+        aria-label="Loading birthday surprise"
+    >
         <div class="loader-box">
 
-            <div class="gift-loader">
+            <div class="loader-gift">
                 🎁
             </div>
 
             <h2>
-                Loading Birthday Surprise...
+                Preparing Your Birthday Surprise...
             </h2>
 
             <div class="progress">
-
                 <div class="progress-bar"></div>
-
             </div>
 
         </div>
-
     </div>
 
-
-    <!-- ==================================================
-         BACKGROUND EFFECTS
-         ================================================== -->
-
-    <div class="stars"></div>
-
-    <div class="particles"></div>
-
-
-    <!-- ==================================================
-         BIRTHDAY MUSIC
-         ================================================== -->
+    <!-- =====================================================
+         MUSIC
+         ===================================================== -->
 
     <audio
         id="birthdayMusic"
         loop
-        preload="auto">
-
+        preload="auto"
+    >
         <source
             src="you_are_my_honey_bunch.mp3"
-            type="audio/mpeg">
+            type="audio/mpeg"
+        >
 
         Your browser does not support audio playback.
-
     </audio>
 
+    <!-- =====================================================
+         OPENING / GIFT
+         ===================================================== -->
 
-    <!-- ==================================================
-         OPENING / GIFT SECTION
-         ================================================== -->
+    <main>
 
-    <section id="opening">
+        <section
+            id="opening"
+            class="opening"
+        >
 
-        <div class="gift">
+            <div class="gift" aria-hidden="true">
 
-            <div class="gift-top"></div>
+                <div class="gift-lid"></div>
 
-            <div class="gift-body">
+                <div class="gift-box">
 
+                    <div class="gift-ribbon"></div>
+
+                    <i class="fa-solid fa-gift"></i>
+
+                </div>
+
+            </div>
+
+            <p class="eyebrow">
+                A little surprise made with love
+            </p>
+
+            <h1>
+                A Special Surprise
+            </h1>
+
+            <p class="opening-subtitle">
+                For my dear Debukola ❤️
+            </p>
+
+            <button
+                id="openBtn"
+                class="primary-btn"
+                type="button"
+            >
                 <i class="fa-solid fa-gift"></i>
+                Open Your Gift
+            </button>
+
+        </section>
+
+        <!-- =================================================
+             HERO
+             ================================================= -->
+
+        <section
+            id="hero"
+            class="hero"
+        >
+
+            <div class="hero-image-wrapper">
+
+                <div class="hero-ring"></div>
+
+                <img
+                    src="images/debukola.jpg"
+                    alt="Debukola"
+                    class="hero-image"
+                    loading="eager"
+                >
 
             </div>
 
-        </div>
+            <p class="eyebrow">
+                Today is all about you
+            </p>
 
+            <h1>
+                Happy Birthday,
+                <span>Debukola</span> 🎂
+            </h1>
 
-        <h1>
-            A Special Surprise
-        </h1>
+            <p
+                id="typing"
+                class="typing-text"
+                aria-live="polite"
+            ></p>
 
+            <p class="hero-message">
+                Wishing you endless happiness, success,
+                good health, joy, love, beautiful memories,
+                and every good thing life has to offer.
+                May this new chapter bring you closer
+                to everything your heart desires.
+            </p>
 
-        <h2>
-            For My Dear Debukola ❤️
-        </h2>
+            <div class="hero-hearts" aria-hidden="true">
+                ❤️ ✨ 💕
+            </div>
 
+        </section>
+
+        <!-- =================================================
+             BIRTHDAY WISHES
+             ================================================= -->
+
+        <section
+            id="wishes"
+            class="content-section"
+        >
+
+            <div class="glass-card">
+
+                <div class="section-icon">
+                    💌
+                </div>
+
+                <p class="eyebrow">
+                    From the heart
+                </p>
+
+                <h2>
+                    Birthday Wishes
+                </h2>
+
+                <div class="message-text">
+
+                    <p>
+                        Happy Birthday to an amazing and wonderful person!
+                    </p>
+
+                    <p>
+                        Thank you for always supporting me,
+                        encouraging me, and making every moment special.
+                    </p>
+
+                    <p>
+                        May your life always be filled with happiness,
+                        love, success, laughter, peace, and good health.
+                    </p>
+
+                    <p>
+                        May every dream in your heart become
+                        a beautiful reality.
+                    </p>
+
+                    <p>
+                        May this new year of your life bring you
+                        countless reasons to smile and memories
+                        worth keeping forever.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             GALLERY
+             ================================================= -->
+
+        <section
+            id="gallery"
+            class="content-section gallery-section"
+        >
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Precious moments
+                </p>
+
+                <h2>
+                    Birthday Gallery 📸
+                </h2>
+
+                <p class="section-description">
+                    Every picture tells a beautiful story.
+                    Click any photo to see it in full.
+                </p>
+
+            </div>
+
+            <div
+                id="galleryContainer"
+                class="gallery-grid"
+            >
+                <!-- Generated by JavaScript -->
+            </div>
+
+            <div
+                id="galleryEmpty"
+                class="empty-state hidden"
+            >
+                <span>📸</span>
+                <h3>Memories are coming...</h3>
+                <p>
+                    The photo memories could not be loaded.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             LIFE JOURNEY
+             ================================================= -->
+
+        <section
+            id="timeline"
+            class="content-section timeline-section"
+        >
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    A beautiful journey
+                </p>
+
+                <h2>
+                    Life Journey ✨
+                </h2>
+
+                <p class="section-description">
+                    A collection of beautiful moments,
+                    unforgettable memories, and little
+                    pieces of a journey worth celebrating.
+                </p>
+
+            </div>
+
+            <div
+                id="timelineContainer"
+                class="timeline"
+            >
+                <!-- Generated by JavaScript -->
+            </div>
+
+            <div class="timeline-ending">
+
+                <div class="ending-icon">
+                    ✨
+                </div>
+
+                <h3>
+                    And the story continues...
+                </h3>
+
+                <p>
+                    The best chapters are still waiting
+                    to be written. ❤️
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             CAKE
+             ================================================= -->
+
+        <section
+            id="cakeSection"
+            class="content-section cake-section"
+        >
+
+            <div class="cake-card">
+
+                <p class="eyebrow">
+                    Make a wish
+                </p>
+
+                <h2>
+                    Your Birthday Cake 🎂
+                </h2>
+
+                <p class="section-description">
+                    Close your eyes, make a beautiful wish,
+                    and blow out the candle.
+                </p>
+
+                <div class="cake-wrapper">
+
+                    <div class="cake-glow"></div>
+
+                    <img
+                        src="images/cake.jpg"
+                        alt="Beautiful birthday cake"
+                        class="cake-image"
+                        loading="lazy"
+                    >
+
+                    <div
+                        class="candle-container"
+                        aria-label="Birthday candle"
+                    >
+
+                        <div class="candle">
+
+                            <div class="wick"></div>
+
+                            <div
+                                class="flame"
+                                id="flame"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button
+                    id="blowBtn"
+                    class="primary-btn"
+                    type="button"
+                >
+                    🎂 Blow the Candle
+                </button>
+
+                <p
+                    id="wishMessage"
+                    class="wish-message"
+                    aria-live="polite"
+                ></p>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             SPECIAL MESSAGE
+             ================================================= -->
+
+        <section
+            id="specialMessage"
+            class="content-section"
+        >
+
+            <div class="glass-card special-message">
+
+                <div class="section-icon">
+                    ❤️
+                </div>
+
+                <p class="eyebrow">
+                    One last thing
+                </p>
+
+                <h2>
+                    A Special Message
+                </h2>
+
+                <div class="message-text">
+
+                    <p>
+                        I wish you once again a very Happy Birthday!
+                    </p>
+
+                    <p>
+                        May this new chapter bring you unlimited
+                        happiness, great success, peace, love,
+                        good health, and unforgettable memories.
+                    </p>
+
+                    <p>
+                        May you continue to shine, grow,
+                        and become everything you dream of becoming.
+                    </p>
+
+                    <p>
+                        May every day ahead give you another
+                        reason to smile.
+                    </p>
+
+                    <p>
+                        You deserve beautiful things,
+                        beautiful moments, and a beautiful life.
+                    </p>
+
+                    <p class="final-message">
+                        Happy Birthday, Debukola! 🎉🎂❤️
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =====================================================
+         LIGHTBOX
+         ===================================================== -->
+
+    <div
+        id="imageLightbox"
+        class="lightbox"
+        aria-hidden="true"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Birthday photo viewer"
+    >
 
         <button
-            id="openBtn"
-            type="button">
-
-            <i class="fa-solid fa-gift"></i>
-
-            Open Gift
-
+            id="lightboxClose"
+            class="lightbox-close"
+            type="button"
+            aria-label="Close photo viewer"
+        >
+            <i class="fa-solid fa-xmark"></i>
         </button>
-
-    </section>
-
-
-    <!-- ==================================================
-         HERO SECTION
-         ================================================== -->
-
-    <section id="hero">
-
-        <img
-            src="images/debukola.jpg"
-            alt="Debukola"
-            class="hero-image">
-
-
-        <h1>
-            Happy Birthday Debukola 🎂
-        </h1>
-
-
-        <h2 id="typing"></h2>
-
-
-        <p>
-
-            Wishing you endless happiness,
-            success,
-            good health,
-            joy,
-            love,
-            and beautiful memories.
-
-            May all your dreams come true
-            and may this new chapter of your life
-            be filled with beautiful moments.
-
-        </p>
-
-    </section>
-
-
-    <!-- ==================================================
-         BIRTHDAY WISHES
-         ================================================== -->
-
-    <section class="glass">
-
-        <h2>
-            Birthday Wishes 💙
-        </h2>
-
-
-        <p>
-
-            Happy Birthday to an amazing and
-            wonderful person!
-
-            Thank you for always supporting me,
-            encouraging me,
-            and making every moment special.
-
-            May your life always be filled with
-            happiness, love, success, laughter,
-            peace, and good health.
-
-            May every dream in your heart become
-            a beautiful reality.
-
-        </p>
-
-    </section>
-
-<!-- ==================================================
-     PHOTO GALLERY
-     ================================================== -->
-
-<section id="gallery">
-
-    <h2>
-        Birthday Gallery 📸
-    </h2>
-
-    <p class="gallery-intro">
-        Every picture tells a beautiful story. ❤️
-        Click any photo to view it.
-    </p>
-
-    <div class="gallery-container">
-
-
-        <div class="card gallery-item">
-
-            <img
-                src="images/cake.jpg"
-                alt="Birthday Cake"
-                loading="lazy">
-
-        </div>
-
-
-        <div class="card gallery-item">
-
-            <img
-                src="images/gift.jpg"
-                alt="Birthday Gift"
-                loading="lazy">
-
-        </div>
-
-
-        <div class="card gallery-item">
-
-            <img
-                src="images/baloon.jpg"
-                alt="Birthday Balloons"
-                loading="lazy">
-
-        </div>
-
-
-        <div class="card gallery-item">
-
-            <img
-                src="images/pic_2.jpg"
-                alt="Birthday Memory"
-                loading="lazy">
-
-        </div>
-
-
-        <div class="card gallery-item">
-
-            <img
-                src="images/pic_1.jpg"
-                alt="Beautiful Birthday Memory"
-                loading="lazy">
-
-        </div>
-
-
-        <div class="card gallery-item">
-
-            <img
-                src="images/joygiver_....jpg"
-                alt="Joyful Birthday Memory"
-                loading="lazy">
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     LIFE JOURNEY
-     ================================================== -->
-
-<section id="timeline">
-
-    <h2>
-        Life Journey ✨
-    </h2>
-
-    <p class="gallery-intro">
-        Beautiful moments worth remembering. ❤️
-    </p>
-
-
-    <div class="timeline-container">
-
-
-        <div class="timeline-item gallery-item">
-
-            <div class="card">
-
-                <img
-                    src="images/joygiver_..jpg"
-                    alt="Joyful Memory"
-                    loading="lazy">
-
-            </div>
-
-        </div>
-
-
-        <div class="timeline-item gallery-item">
-
-            <div class="card">
-
-                <img
-                    src="images/pic_3.jpg"
-                    alt="Life Journey Memory 1"
-                    loading="lazy">
-
-            </div>
-
-        </div>
-
-
-        <div class="timeline-item gallery-item">
-
-            <div class="card">
-
-                <img
-                    src="images/pic_4.jpg"
-                    alt="Life Journey Memory 2"
-                    loading="lazy">
-
-            </div>
-
-        </div>
-
-
-        <div class="timeline-item gallery-item">
-
-            <div class="card">
-
-                <img
-                    src="images/pic_5.jpg"
-                    alt="Life Journey Memory 3"
-                    loading="lazy">
-
-            </div>
-
-        </div>
-
-
-        <div class="timeline-item gallery-item">
-
-            <div class="card">
-
-                <img
-                    src="images/pic_6.jpg"
-                    alt="Life Journey Memory 4"
-                    loading="lazy">
-
-            </div>
-
-        </div>
-
-
-        <div class="timeline-item gallery-item">
-
-            <div class="card">
-
-                <img
-                    src="images/pic_7.jpg"
-                    alt="Life Journey Memory 5"
-                    loading="lazy">
-
-            </div>
-
-        </div>
-
-
-        <div class="timeline-item gallery-item">
-
-            <div class="card">
-
-                <img
-                    src="images/pic_8.jpg"
-                    alt="Life Journey Memory 6"
-                    loading="lazy">
-
-            </div>
-
-        </div>
-
-
-        <div class="timeline-item gallery-item">
-
-            <div class="card">
-
-                <img
-                    src="images/pic_9.jpeg"
-                    alt="Life Journey Memory 7"
-                    loading="lazy">
-
-            </div>
-
-        </div>
-    
-         <div class="timeline-item gallery-item">
-
-            <div class="card">
-
-                <img
-                    src="images/pic_10.jpg"
-                    alt="Life Journey Memory 7"
-                    loading="lazy">
-
-        </div>
-        
-        <div class="timeline-item gallery-item">
-
-            <div class="card">
-
-                <img
-                    src="images/pic_11.jpg"
-                    alt="Life Journey Memory 7"
-                    loading="lazy">
-
-            </div>
-
-        </div>
-
-        <div class="timeline-item gallery-item">
-
-            <div class="card">
-
-                <img
-                    src="images/pic_12.jpg"
-                    alt="Life Journey Memory 7"
-                    loading="lazy">
-
-            </div>
-
-        </div>
-
-        
-        <div class="timeline-item gallery-item">
-
-            <div class="card">
-
-                <img
-                    src="images/pic_13.jpg"
-                    alt="Life Journey Memory 7"
-                    loading="lazy">
-
-            </div>
-
-        </div>
-
-        <div class="timeline-item gallery-item">
-
-            <div class="card">
-
-                <img
-                    src="images/pic_14.jpg"
-                    alt="Life Journey Memory 7"
-                    loading="lazy">
-
-            </div>
-
-        </div>
-
-                <div class="timeline-item gallery-item">
-
-            <div class="card">
-
-                <img
-                    src="images/pic_15.jpg"
-                    alt="Life Journey Memory 7"
-                    loading="lazy">
-
-            </div>
-
-        </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     IMAGE LIGHTBOX
-     ================================================== -->
-
-<div
-    id="imageLightbox"
-    class="image-lightbox"
-    aria-hidden="true">
-
-
-    <!-- Close -->
-
-    <button
-        id="lightboxClose"
-        class="lightbox-close"
-        type="button"
-        aria-label="Close image viewer">
-
-        <i class="fa-solid fa-xmark"></i>
-
-    </button>
-
-
-    <!-- Previous -->
-
-    <button
-        id="lightboxPrev"
-        class="lightbox-nav lightbox-prev"
-        type="button"
-        aria-label="Previous image">
-
-        <i class="fa-solid fa-chevron-left"></i>
-
-    </button>
-
-
-    <!-- Image -->
-
-    <div class="lightbox-content">
-
-        <img
-            id="lightboxImage"
-            src=""
-            alt="Birthday memory">
-
-        <p id="lightboxCaption"></p>
-
-        <div id="lightboxCounter"></div>
-
-    </div>
-
-
-    <!-- Next -->
-
-    <button
-        id="lightboxNext"
-        class="lightbox-nav lightbox-next"
-        type="button"
-        aria-label="Next image">
-
-        <i class="fa-solid fa-chevron-right"></i>
-
-    </button>
-
-
-</div>
-
-
-    </section>
-
-
-    <!-- ==================================================
-         BIRTHDAY CAKE
-         ================================================== -->
-
-    <section id="cakeSection">
-
-        <h2>
-            Birthday Cake 🎂
-        </h2>
-
-
-        <img
-            src="images/cake.jpg"
-            alt="Birthday Cake"
-            class="cake-image">
-
-
-        <!-- Candle -->
-
-        <div class="candle-container">
-
-            <div class="candle">
-
-                <div class="flame"></div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Blow Candle Button -->
 
         <button
-            id="blowBtn"
-            type="button">
-
-            🎂 Blow the Candle
-
+            id="lightboxPrev"
+            class="lightbox-nav lightbox-prev"
+            type="button"
+            aria-label="Previous photo"
+        >
+            <i class="fa-solid fa-chevron-left"></i>
         </button>
 
-    </section>
+        <div class="lightbox-content">
 
+            <img
+                id="lightboxImage"
+                src=""
+                alt=""
+            >
 
-    <!-- ==================================================
-         SPECIAL MESSAGE
-         ================================================== -->
+            <p id="lightboxCaption"></p>
 
-    <section class="glass">
+            <span id="lightboxCounter"></span>
 
-        <h2>
-            Special Message ❤️
-        </h2>
+        </div>
 
+        <button
+            id="lightboxNext"
+            class="lightbox-nav lightbox-next"
+            type="button"
+            aria-label="Next photo"
+        >
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
 
-        <p>
+    </div>
 
-            I wish you once again a very
-            Happy Birthday!
+    <!-- =====================================================
+         EFFECT LAYERS
+         ===================================================== -->
 
-            May this new chapter bring you
-            unlimited happiness, great success,
-            peace, love, good health, and
-            unforgettable memories.
+    <canvas
+        id="fireworks"
+        aria-hidden="true"
+    ></canvas>
 
-            May you continue to shine,
-            grow, and become everything
-            you dream of becoming.
+    <div
+        id="confetti"
+        aria-hidden="true"
+    ></div>
 
-            May every day ahead give you
-            another reason to smile.
-
-            You deserve beautiful things,
-            beautiful moments, and a beautiful life.
-
-            Happy Birthday, Debukola! 🎉🎂❤️
-
-        </p>
-
-    </section>
-
-
-    <!-- ==================================================
-         FIREWORKS
-         ================================================== -->
-
-    <canvas id="fireworks"></canvas>
-
-
-    <!-- ==================================================
-         CONFETTI
-         ================================================== -->
-
-    <div id="confetti"></div>
-
-
-    <!-- ==================================================
+    <!-- =====================================================
          FOOTER
-         ================================================== -->
+         ===================================================== -->
 
     <footer>
 
-        <h2>
-            Made With ❤️
-        </h2>
+        <div class="footer-content">
 
+            <h2>
+                Made With ❤️
+            </h2>
 
-        <p>
-            Especially For My Dear Debukola
-        </p>
+            <p>
+                Especially for my dear Debukola
+            </p>
 
+            <div class="footer-divider">
+                ✦
+            </div>
 
-        <h3>
-            Happy Birthday 🎉🎂
-        </h3>
+            <h3>
+                Happy Birthday 🎉🎂
+            </h3>
+
+            <p class="footer-year">
+                A little digital memory to celebrate
+                a beautiful person.
+            </p>
+
+        </div>
 
     </footer>
 
-
-    <!-- ==================================================
-         MUSIC CONTROL
-         ================================================== -->
+    <!-- =====================================================
+         FLOATING CONTROLS
+         ===================================================== -->
 
     <button
         id="musicBtn"
+        class="floating-control music-control"
         type="button"
-        aria-label="Play or pause birthday music">
-
+        aria-label="Play birthday music"
+        title="Birthday music"
+    >
         <i class="fa-solid fa-volume-xmark"></i>
-
     </button>
-
-
-    <!-- ==================================================
-         SCROLL TO TOP
-         ================================================== -->
 
     <button
         id="topBtn"
+        class="floating-control top-control"
         type="button"
-        aria-label="Scroll to top">
-
+        aria-label="Scroll to top"
+        title="Back to top"
+    >
         <i class="fa-solid fa-arrow-up"></i>
-
     </button>
 
-
-    <!-- ==================================================
+    <!-- =====================================================
          JAVASCRIPT
-         ================================================== -->
+         ===================================================== -->
 
     <script src="script.js"></script>
 
 </body>
-
 </html>
